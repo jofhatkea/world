@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {border: 1px solid #000; min-height: 100px;}
+    .container {background:lightblue}
+    header {background: #c0ffee;}
+    aside {background: green}
+    main {background: lightgray}
+    footer {background:yellow}
+    
+    .container {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr
+    }
+    main {
+      display:grid;
+      grid-template-columns: 50% 50%;
+    }
+    header {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+    aside {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    main {
+      grid-column-start: 2;
+      grid-column-end: -1;
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <div class="container">
+    <header>header</header>
+    <aside>aside</aside>
+    <main>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      <article>
+        <h1>Hi mom</h1>
+      </article>
+      
+    </main>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>
